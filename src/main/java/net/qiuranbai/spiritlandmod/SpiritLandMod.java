@@ -1,6 +1,7 @@
 package net.qiuranbai.spiritlandmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -12,6 +13,9 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.qiuranbai.spiritlandmod.block.ModBlocks;
+import net.qiuranbai.spiritlandmod.item.ModCreativeModTabs;
+import net.qiuranbai.spiritlandmod.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -27,6 +31,10 @@ public class SpiritLandMod
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -51,7 +59,10 @@ public class SpiritLandMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+       if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.COLD_IRON_INGOT);
+           event.accept(ModItems.RAW_COLD_IRON_INGOT);
+       }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

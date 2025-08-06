@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "spiritlandmod:raw_cold_iron_block"
+    }
+  ],
+  "result": {
+    "item": "spiritlandmod:raw_cold_iron_ingot",
+    "count": 9
+  }
+}

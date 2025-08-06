@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "spiritlandmod:raw_cold_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "spiritlandmod:raw_cold_iron_block"
+  }
+}
