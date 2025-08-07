@@ -1,9 +1,17 @@
 {
   "item.spiritlandmod.cold_iron_ingot": "Cold Iron Ingot",
   "item.spiritlandmod.raw_cold_iron_ingot": "Raw Cold Iron Ingot",
+  "item.spiritlandmod.metal_detector": "Metal Detector",
+  "item.spiritlandmod.cooked_sausage": "Cooked Sausage",
+  "item.spiritlandmod.raw_sausage": "Raw Sausage",
 
   "block.spiritlandmod.cold_iron_block": "Block of Cold Iron",
   "block.spiritlandmod.raw_cold_iron_block": "Raw Block of Cold Iron",
+  "block.spiritlandmod.cold_iron_ore": "Cold Iron Ore",
+
+
+  "tooltip.spiritlandmod.metal_detector.tooltip": "Finds Metals underground",
+
 
   "creativetab.spirit_land_tab": "Spirt Land Tab"
 }

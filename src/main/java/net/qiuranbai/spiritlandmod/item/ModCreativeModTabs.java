@@ -22,10 +22,14 @@ public class ModCreativeModTabs {
                         // Items
                         output.accept(ModItems.COLD_IRON_INGOT.get());
                         output.accept(ModItems.RAW_COLD_IRON_INGOT.get());
+                        output.accept(ModItems.METAL_DETECTOR.get());
+                        output.accept(ModItems.COOKED_SAUSAGE.get());
+                        output.accept(ModItems.RAW_SAUSAGE.get());
 
                         //Blocks
                         output.accept(ModBlocks.COLD_IRON_BLOCK.get());
                         output.accept(ModBlocks.RAW_COLD_IRON_BLOCK.get());
+                        output.accept(ModBlocks.COLD_IRON_ORE.get());
                     })
                     .build());
 

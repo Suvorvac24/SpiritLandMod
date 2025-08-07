@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 50,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "spiritlandmod:raw_sausage"
+  },
+  "result": "spiritlandmod:cooked_sausage"
+}
